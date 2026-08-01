@@ -1,0 +1,47 @@
+{
+  "id": "detector-app.html",
+  "name": "Is It Antizionism?",
+  "short_name": "Antizionism?",
+  "description": "Website-installable detector for antizionist vocabulary, slogans, libels, and accusation patterns.",
+  "lang": "en-US",
+  "start_url": "detector-app.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "categories": [
+    "education",
+    "reference",
+    "utilities"
+  ],
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Analyze text",
+      "short_name": "Analyze",
+      "description": "Open the detector and paste text to analyze.",
+      "url": "detector-app.html",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

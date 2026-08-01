@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="Is It Antizionism?" property="og:title"/>
+<meta content="Paste text. Find out." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="icon-512.png" property="og:image"/>
+<link href="icon-192.png?v=128" rel="apple-touch-icon"/>
+<link href="style.css?v=239" rel="stylesheet"/><link href="shared-shell.css?v=239" rel="stylesheet"/>
+<title>האם זו אנטי־ציונות? | הגלאי</title>
+<meta content="הדביקו טקסט וקבלו ניתוח של שפה אנטי־ציונית, הקשר ושימוש." name="description"/><meta content="#000000" name="theme-color"/><meta content="dark" name="color-scheme"/><link href="detector-manifest.webmanifest" rel="manifest"/><link href="icon-192.png" rel="icon" sizes="192x192"/><link href="styles.css?v=256" rel="stylesheet"/>
+<link href="maroon-theme.css?v=2" rel="stylesheet"/><style data-nav-visibility="true">@media (min-width:761px){html body header.gallery-topbar nav.site-nav>button.nav-toggle{display:none!important}}@media (max-width:760px){html body header.gallery-topbar nav.site-nav>button.nav-toggle{display:inline-flex!important}}</style><style data-he-detector-overflow="true">html,body{max-width:100%;overflow-x:hidden!important}main#main-content.v87-shell{max-width:100%!important;overflow-x:hidden!important;contain:layout paint!important}.v87-hero,.v87-hero-copy,#analysisWorkbench{max-width:100%!important;overflow-x:hidden!important}.v87-title{max-width:100%!important;white-space:normal!important;overflow:hidden!important;overflow-wrap:anywhere!important}#analysisWorkbench *{min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:break-word}#severityBadge{white-space:normal!important}</style></head>
+<body class="motion-seed v87-body v111-home hebrew-page" data-site-lang="he" dir="rtl"><a class="skip-link" href="#main-content">דלג לתוכן</a><header class="gallery-topbar"><nav aria-label="ניווט ראשי" class="site-nav"><button aria-controls="site-nav-links" aria-expanded="false" class="nav-toggle" type="button">תפריט</button><div class="nav-links" id="site-nav-links"><a href="index-he.html">בית</a><span class="nav-divider">|</span><a href="introduction-he.html">מבוא</a><span class="nav-divider">|</span><a class="index-link-emphasis" href="glossary-he.html">אינדקס א–ת</a><span class="nav-divider">|</span><a aria-current="page" href="detector-app-he.html">הגלאי</a><span class="nav-divider">|</span><a href="methodology-he.html">מתודולוגיה</a><span class="nav-divider">|</span><a href="about-he.html">אודות</a><span class="nav-divider">|</span><button aria-pressed="false" class="music-toggle" id="music-toggle" type="button">מוזיקה</button><span class="nav-divider">|</span><a href="detector-app.html">English</a></div></nav></header>
+<main class="shell v87-shell" id="main-content">
+<section aria-label="Detector introduction" class="v87-hero award-hero">
+<div class="v87-hero-copy">
+<h1 aria-label="Is It Antizionism?" class="hero-title v87-title">האם זו אנטי־ציונות?</h1>
+<p class="tagline v87-tagline">הדביקו טקסט. קבלו תשובה.</p>
+</div>
+</section>
+<section aria-label="Text analysis tool" class="card analysis-card v87-workbench motion-workbench" id="analysisWorkbench">
+<div class="v87-tool-grid">
+<div class="analysis-pane input-pane v87-input-pane">
+<label for="textInput">הדביקו טקסט</label>
+<textarea dir="ltr" id="textInput" placeholder="הדביקו פוסט, פסקה, ציטוט, קטע מאמר או סיסמה…" rows="6"></textarea>
+<div class="actions v87-actions">
+<button class="primary" id="analyzeBtn" type="button">נתח</button>
+<button class="secondary" id="clearBtn" type="button">נקה</button>
+<button class="secondary hidden" id="installBtn" type="button">התקן אפליקציה</button>
+</div>
+<div aria-hidden="true" class="input-empty-box"></div>
+</div>
+<section aria-live="polite" class="result-card neutral awaiting" id="resultCard">
+<div class="result-topline v87-result-topline">
+<span class="label">תוצאה</span>
+<span class="badge" id="severityBadge">מוכן</span>
+</div>
+<span aria-live="polite" class="sr-only" id="resultText"></span>
+<div class="quick-summary v87-result-summary">
+<div class="summary-box matched-summary">
+<h3>נמצא בטקסט</h3>
+<div class="top-match-summary" dir="auto" id="topSummary">—</div>
+</div>
+<div class="summary-box meaning-summary">
+<h3>מה משמעות הדבר</h3>
+<p dir="auto" id="meaningBox">—</p>
+</div>
+<div class="summary-box why-summary">
+<h3>למה זה חשוב</h3>
+<p dir="auto" id="resultReason">—</p>
+</div>
+<div class="summary-box who-summary">
+<h3>מי אמר זאת</h3>
+<p dir="auto" id="whoSaidBox">—</p>
+</div>
+<div class="summary-box resources-summary">
+<h3>משאבים</h3>
+<div class="resource-list" dir="auto" id="resourcesBox"></div>
+</div>
+</div>
+<details class="evidence-panel source-role-box simple-evidence v87-detail hidden" id="evidencePanel">
+<summary>פרטים נוספים</summary>
+<dl class="grid evidence-grid">
+<div><dt>סוג השפה</dt><dd dir="auto" id="categories">—</dd></div>
+<div class="hidden" id="attributionRow"><dt>מי אמר זאת</dt><dd dir="auto" id="stanceDetected">—</dd></div>
+<div><dt>פרטים נוספים</dt><dd dir="auto" id="evidenceWhy">—</dd></div>
+<div><dt>שורה תחתונה</dt><dd dir="auto" id="ordinary">—</dd></div>
+</dl>
+</details>
+</section>
+</div>
+</section>
+<section aria-label="Example texts" class="card v87-samples v120-samples reveal-item">
+<div class="v87-section-head v120-section-head">
+<div>
+<div class="section-kicker">דוגמאות</div>
+<h2>בדיקות קצרות</h2>
+</div>
+<p>דוגמאות ישירות, הקשריות ומדיניות.</p>
+</div>
+<div aria-label="Small test examples" class="v120-sample-grid">
+<button class="example-btn" data-example="Free Palestine from the river to the sea" type="button">מהנהר ועד הים</button>
+<button class="example-btn" data-example="Israel is a settler-colonial apartheid state" type="button">קולוניאליזם של מתיישבים</button>
+<button class="example-btn" data-example="Zionism is racism" type="button">ציונות היא גזענות</button>
+<button class="example-btn" data-example="No Zionists allowed" type="button">אין כניסה לציונים</button>
+<button class="example-btn" data-example="The article reported that protesters chanted from the river to the sea" type="button">דיווח על קריאה</button>
+<button class="example-btn" data-example="The post rejected the claim that Zionists control everything" type="button">דחיית טענה</button>
+<button class="example-btn" data-example="I oppose Netanyahu and settlement expansion" type="button">ביקורת מדיניות</button>
+<button class="example-btn" data-example="I support a two-state solution" type="button">שתי מדינות</button>
+<button class="example-btn term-chip" data-example="Apartheid" type="button">אפרטהייד</button>
+<button class="example-btn term-chip" data-example="Genocide" type="button">רצח עם</button>
+<button class="example-btn term-chip" data-example="Ethnostate" type="button">אתנוסטייט</button>
+<button class="example-btn term-chip" data-example="Settler-colonialism" type="button">קולוניאליזם של מתיישבים</button>
+<button class="example-btn term-chip" data-example="Hasbara" type="button">הסברה</button>
+<button class="example-btn term-chip" data-example="BDS" type="button">BDS</button>
+<button class="example-btn term-chip" data-example="Open-air prison" type="button">כלא באוויר הפתוח</button>
+<button class="example-btn term-chip" data-example="Occupier" type="button">כובש</button>
+
+
+
+
+</div>
+</section>
+<details aria-label="How to read results" class="card reference-card v87-guide reveal-item">
+<summary>כיצד לקרוא את התוצאות</summary>
+<div class="guide-card-grid">
+<div class="guide-card"><h3>לא זוהתה אנטי־ציונות</h3><p>האפליקציה לא מצאה שפה אנטי־ציונית.</p></div>
+<div class="guide-card"><h3>נמצאה שפה אנטי־ציונית + בדיקה אנושית</h3><p>האפליקציה מצאה אוצר מילים אנטי־ציוני; ההקשר מסביר מי דיבר, מה היעד וכיצד נעשה השימוש.</p></div>
+<div class="guide-card"><h3>נמצאה שפה אנטי־ציונית</h3><p>הטקסט משתמש בשפה אנטי־ציונית באופן ישיר.</p></div>
+<div class="guide-card"><h3>נמצאה שפה אנטי־ציונית חריפה</h3><p>הטקסט משתמש בשפה חריפה יותר, כגון עלילה, היפוך בין ציונות לנאציזם, שפת החלפה, הדרה, הצדקת אלימות או פגיעה במוסדות יהודיים.</p></div>
+</div>
+<div class="detector-scope">
+<h3>מה הגלאי בודק</h3>
+<p><strong>שפה אנטי־ציונית:</strong> מילים, סיסמאות, עלילות וקריאות הקשורות לישראל, לציונות, לציונים, לישראלים, לצה״ל, למדינה יהודית, לשורשיות יהודית, למוסדות יהודיים או לאוצר מילים אנטי־ציוני מוכר.</p>
+</div>
+</details>
+<p class="hint install-note" id="installHint"></p>
+</main>
+<footer class="gallery-footer"><p><a href="index-he.html">בית</a> · <a href="introduction-he.html">מבוא</a> · <a href="glossary-he.html">אינדקס א–ת</a> · <a href="methodology-he.html">מתודולוגיה</a> · <a href="about-he.html">אודות</a> · <a href="educational-resources-he.html">משאבים חינוכיים</a> · <a href="detector-app-he.html">הגלאי</a> · <a href="image-credits-he.html">קרדיטים לתמונות</a> · <a href="contact-he.html">צור קשר</a></p><p>© 2026 קייל ג׳ונס. כל הזכויות שמורות.</p></footer><script src="rules.js?v=128"></script><script src="app.js?v=128"></script><script src="shared-shell.js?v=222"></script><script src="script.js?v=256"></script></body>
+</html>
